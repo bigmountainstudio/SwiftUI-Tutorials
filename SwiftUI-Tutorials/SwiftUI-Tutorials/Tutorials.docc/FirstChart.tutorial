@@ -1,0 +1,43 @@
+@Tutorial(time: 5) {
+    @Intro(title: "Creating Charts") {
+        Get an introduction to the Chart control in SwiftUI. You will add a bar chart and connect it with data.
+        
+        This tutorial is based off the WWDC 22 video titled "Hello Swift Charts".
+        
+        @Image(source: bar-chart, alt: "bar chart")
+    }
+    
+    @Section(title: "Adding a Chart") {
+        @ContentAndMedia {
+            First, you will add a chart with static values to see how the chart control is composed.
+            
+            Then you will create a data source and hook your chart up to the data source to dynamically build your chart.
+            
+            <!--      Show both finished products?      @Image(source: file, alt: "accessible description")-->
+        }
+        
+        @Steps {
+            @Step {
+                Create a new SwiftUI file and add a VStack with a title for the chart.
+                @Code(name: "FirstChart.swift", file: FirstChart_1.swift) {
+                    @Image(source: FirstChart_1.png, alt: "Preview")
+                }
+            }
+            
+            @Step {
+                Next, you want to import Charts and then add `Chart`. The Chart is a container view that can contain one or more `BarMark` views.
+                The `BarMark` view represents a value in a chart. Depending on the style of the chart the bar mark can be rendered as a bar (default) or a plot on a line graph, etc.
+                @Code(name: "FirstChart.swift", file: FirstChart_2.swift) {
+                    @Image(source: FirstChart_2.png, alt: "Preview")
+                }
+            }
+            
+            @Step {
+                You can add more bar marks to draw additional bars in your graph. This is the basic setup of a graph here. You have a `Chart` with repeated `BarMark` views contained within it.
+                @Code(name: "FirstChart.swift", file: FirstChart_3.swift) {
+                    @Image(source: FirstChart_3.png, alt: "Preview")
+                }
+            }
+        }
+    }
+}

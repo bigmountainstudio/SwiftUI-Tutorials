@@ -1,0 +1,15 @@
+@Tutorials(name: "SwiftUI Tutorials") {
+    @Intro(title: "Learn how to do things in SwiftUI") {
+        Step-by-step tutorials to learn how to work in SwiftUI.
+        
+        @Image(source: computer-work.png, alt: "Learning SwiftUI at a computer")
+    }
+    
+    @Chapter(name: "Control Views") {
+        Learn about the different controls that SwiftUI gives you to build amazing UI.
+        
+        @Image(source: phone-ui.png, alt: "Phone with various controls around it.")
+        
+        @TutorialReference(tutorial: "doc:FirstChart")
+    }
+}
