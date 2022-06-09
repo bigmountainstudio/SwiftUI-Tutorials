@@ -3,6 +3,7 @@
 import Charts
 import SwiftUI
 
+
 struct FirstChart: View {
     var body: some View {
         VStack {
